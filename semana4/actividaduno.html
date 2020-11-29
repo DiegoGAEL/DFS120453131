@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Días de la semana</h1>
+    <script>
+        var fecha = new Date();
+        console.log (fecha);
+        var dia = fecha.getDay();
+        console.log (dia)
+        var horaDia = fecha.getHours();
+        var minutos = fecha.getMinutes();
+        if(dia === 0){
+            console.log("Hoy es Domingo ");
+            document.write("Hoy es Domingo ");
+        }
+        if(dia === 1){
+            console.log("Hoy es Lunes ");
+            document.write("Hoy es Lunes ");
+        }
+        if(dia === 2){
+            console.log("Hoy es Martes ");
+            document.write("Hoy es Martes ");
+        }
+        if(dia === 3){
+            console.log("Hoy es Miércoles ");
+            document.write("Hoy es Miercoles ");
+        }
+        if(dia === 4){
+            console.log("Hoy es Jueves ");
+            document.write("Hoy es Jueves ");
+        }
+        if(dia === 5){
+            console.log("Hoy es Viernes ");
+            document.write("Hoy es Viernes ");
+        }
+        if(dia === 6){
+            console.log("Hoy es Sábado ");
+            document.write("Hoy es Sábado ");
+        }
+
+        document.write ("son las "+ horaDia + "hrs " + "con " + minutos + " minutos ")
+
+
+        if(horaDia === 9){
+        console.log ("hora de curso");
+        document.write("hora de curso");
+        }
+        if(horaDia === 10){
+        console.log ("hora de curso");
+        document.write("hora de curso");
+        }
+        if(horaDia === 12){
+        console.log ("hora de curso");
+        document.write("hora de curso");
+        }
+        if(horaDia === 13){
+        console.log ("hora de curso");
+        document.write("hora de curso");
+        }
+        if(horaDia >14){
+        console.log ("fin de la clase ");
+        document.write(" fin de la clase ");
+        }
+        if(horaDia === 11){
+        console.log ("hora de receso ");
+        document.write("hora de receso ");
+        }
+
+    
+
+    </script>
+    
+</body>
+</html>

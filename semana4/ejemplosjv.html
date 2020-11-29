@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplosJS</title>
+</head>
+
+<body>
+    <h1>Java & jQuery</h1>
+
+    <script>
+        console.log('hola mundo');
+        var fecha = new Date(); 
+        console.log(fecha); 
+        document.write(fecha);
+        var dia = fecha.getDay();
+        document.write("el dia de la seman es " + dia);
+        var horaDia = fecha.getHours();
+        document.write('la hora es' + horaDia)
+        var minutoDia = fecha.getMinutes();
+        document.write('los minutos son ' + minutoDia) 
+
+        
+
+        var calificacion = Math.round(Math.random() * 10)
+        console.log(calificacion);
+        if (calificacion>= 6){
+            console.log('El alumno esta aprobado')
+        } else{
+            console.log('El alumno reprobo')
+            
+        }
+
+    </script>
+    
+</body>
+</html>

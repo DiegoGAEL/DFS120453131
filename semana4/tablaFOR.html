@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: medium;
+        }
+        table{
+            margin: auto;
+            width: 60%;
+        }
+        th,td{
+            padding: 5%;
+        }
+        tr.cebra {
+            background-color: rgb(187, 31, 31);
+        }
+        
+        tr:not(#encabezado):hover {
+            background-color: rgb(153, 11, 11);
+            cursor: pointer;
+        }
+        
+        th.column {
+            border-left: 5px solid rgb(223, 248, 0);
+            border-right: 3px solid #fffb00;
+        }
+    </style>
+
+
+</head>
+<body>
+  <h1>Uso de For con tablas</h1>  
+    <table>
+        <tr id="Encabezado">
+      <th></th>
+      <script>
+          for (var i = 1; i <= 10; i++){
+              console.log("<th class='fila'>" + i + "</th>");
+          }
+      </script>
+
+      <tr>
+        <script>
+for ( var i = 1; i <= 10; i++) {
+    if((i % 2) === 0) {
+        document.write("<tr>");
+            
+    }   else{
+        console.log("tr class = 'cebra'> ");
+       
+    }
+    
+for (var j = 1; j <= 10; j++) {
+    document.write("<td>" + (i * j) + "</td>");
+}
+document.write("</tr>")
+}
+
+
+
+        </script>
+
+      </tr>
+    </table>
+
+</body>
+</html>
