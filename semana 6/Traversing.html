@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo</title>
+    
+</head>
+
+<body>
+    <div id="dialog" title="Productos">
+        <table border="5px"> 
+            <thead>
+                <th>Clave</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+            </thead>
+            <tr class="articulo">
+                <td class="claveProducto">A7689</td>
+                <td class="descripcionProducto">mause</td>
+                <td class="precioProducto">1000</td>
+            </tr>
+            <tr class="articulo">
+                <td class="claveProducto">G5296</td>
+                <td class="descripcionProducto">control xbox</td>
+                <td class="precioProducto">2500</td>
+            </tr>
+            <tr class="articulo">
+                <td class="claveProducto">T5392</td>
+                <td class="descripcionProducto">monitor</td>
+                <td class="precioProducto">5500</td>
+            </tr>
+            <br><br><br>
+
+        </table>
+    </div>
+
+
+
+
+    </table>
+    <button id="agregar">Agregar</button>
+    <table>
+        <thead>
+            <tr id="filaTitulos">
+                <th>Clave</th>
+                <th>descripcion</th>
+                <th>precio</th>
+                <th>unidades</th>
+                <th>importe</th>
+
+            </tr>
+           
+            
+
+        </thead>
+
+        <tbody id="partidas">
+            
+        </tbody>
+        <tfoot>
+            <tr id="filaSubtotal">
+                <td class="text-right"colspan="1">subtotal : $</td>
+                <td id="subtotal"></td>
+            </tr>
+            <tr id="filaIVA">
+                <td class="text-right"colspan="1">IVA : $</td>
+                <td id="iva"></td>
+
+            </tr>
+            <tr id="filatotal">
+                <td class="text-right"colspan="1">total : $</td>
+                <td id="total"></td>
+            </tr>
+           
+        </tfoot>
+
+
+    </table>
+
+</body>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+ <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+ <script src="js/funcionalidad.js"></script>
+ <script>
+     $("#dialog").dialog( {
+        autoOpen: false,
+        modal: true
+         })
+ </script>
+ </html>
+
